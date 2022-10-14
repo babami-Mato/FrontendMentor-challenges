@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--Cream);
+        
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.container {
+    background-color: white;
+    margin: 20px auto;
+    width: 350px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container h1 {
+    margin: 15px auto ;
+    color: hsl(212, 21%, 14%)
+}
+
+.container p, p2 , p3 {
+    font-family:monospace;
+    font-size: 1rem;
+    line-height: 1.6em;
+    color: hsl(228, 12%, 48%);
+}
+
+.f-700 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%)
+}
+
+.price {
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    gap: 15px;
+    margin:20px 0;
+}
+
+.main-img {
+      width: 100%;
+}
+
+.btn-cart {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family:monospace;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+}
+
+.btn-cart:hover {
+    background-color:hsl(159, 42%, 20%);
+}
+
+.side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:right;
+    margin: 20px;
+} 
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width:600px) {
+    .container {
+        min-width:700px;
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        height:525px;
+
+        
+    }
+
+    .main-img {
+        width:100%;
+        border-radius: 10px 0 0 10px;
+        height:;
+    }
+
+    .desk-img {
+        height: 10px;
+    }
+     
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
